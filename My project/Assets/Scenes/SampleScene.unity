@@ -235,6 +235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food
       objectReference: {fileID: 0}
+    - target: {fileID: 5744399286965185884, guid: 66c29d68eb5a50843b65e01c2c1d6b3f, type: 3}
+      propertyPath: m_TagString
+      value: Food
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66c29d68eb5a50843b65e01c2c1d6b3f, type: 3}
 --- !u!1001 &5918873539237640570

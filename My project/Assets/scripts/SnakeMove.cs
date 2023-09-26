@@ -1,4 +1,4 @@
-q   using System.Collections;
+   using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,16 +8,10 @@ public class SnakeMove : MonoBehaviour
     private Vector2 direction; //control direction of movement
 
 
-    List<Transform> segments;
-        public Tansfrom bodyPrefab; //variable to store the body
-                                    
-
-
     // Start is called before the first frame update
     void Start()
     {
-        segments = new List<Transform>();
-        segements.Add(transform);
+        
     }
 
     // Update is called once per frame
@@ -58,19 +52,14 @@ public class SnakeMove : MonoBehaviour
         void Grow()
         {
             Transform segment = Instantiate(this.bodyPrefab);                  //create a new body part
-            segment.position = segments[segments.Count - 1].position;         //position it on the back of the snake 
+            segmant.position = segments[segments.Count - 1].position;         //position it on the back of the snake 
             segments.Add(segment);                                            //add it to the list
 
         }
 
         //Funtion for collision
         void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.tag == "Food")                                // the red
-            {
-                Grow();
-            }
-        }
+
 
     }
 
