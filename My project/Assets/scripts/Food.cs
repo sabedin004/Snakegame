@@ -31,6 +31,11 @@ public class Food : MonoBehaviour
     }
 
 
+    //Function for Collision
+    void OnTriggerEnter2D (Collider2D other)
+    {
+        RandomPos();
+    }
 
 
 
