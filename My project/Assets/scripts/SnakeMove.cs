@@ -103,6 +103,7 @@ public class SnakeMove : MonoBehaviour
         if (other.tag == "Food")      // check if the other object is the food
         {
             Grow();             //turn the grow function
+            Time.fixedDeltaTime -= 0.001f;
         }
         else if (other.tag == "Obstacle")      //check if the other object is an obstacle
         {
