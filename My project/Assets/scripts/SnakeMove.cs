@@ -109,6 +109,7 @@ public class SnakeMove : MonoBehaviour
             //Debug.Log("Hit")
             Debug.Log("Hit");
             SceneManager.LoadScene("Endscene");                //change to end scene
+            SceneManager.LoadScene("SampleScene");                //change to end scene
         }
 
     }
